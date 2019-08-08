@@ -6,7 +6,11 @@ namespace CS.Itself.Iterator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            EnumerableCollection collection = new EnumerableCollection();
+            foreach (var item in collection)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
