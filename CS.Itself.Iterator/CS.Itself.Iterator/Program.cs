@@ -11,6 +11,13 @@ namespace CS.Itself.Iterator
             {
                 Console.WriteLine(item);
             }
+
+            Catalogue catalogue = new Catalogue();
+            foreach (SparePart sparePart in catalogue.GetSpareParts(5))
+            {
+                Console.WriteLine($"Detail - {sparePart.Name}, Code - {sparePart.Code}, Price - {sparePart.Price}");
+            }
+
         }
     }
 }
